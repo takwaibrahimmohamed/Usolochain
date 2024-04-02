@@ -22,7 +22,7 @@ body{
    
    /* position: relative; */
     color: white;
- 
+ height: 1000px;
 }
 a{
     text-decoration: none;
@@ -308,7 +308,7 @@ gap: 30px;
 line-height: 30px;
 }
 .investment{
-    background: url(../images/image\ 48.png) no-repeat;
+    background: url(../images/image48.png) no-repeat;
     background-position: center;
     background-size: cover;
     margin-top: 100px;
@@ -566,7 +566,7 @@ align-items: center;
     right: 20px;
   
     font-family: var(--fontFamilyAudiowide);
-    font-size: 33;
+    font-size: 33px;
     font-weight: 400;
     background: -webkit-linear-gradient(380deg,#D75594  90%, #2F38CC);
     -webkit-background-clip: text;
@@ -579,7 +579,7 @@ align-items: center;
     width: 2px;
     height: 50px;
     background-color: #FFF2F81F;
-    bottom: -15px;
+    bottom: -5px;
     left: -45px;
 }
 .inputtext input:focus{
@@ -590,7 +590,7 @@ align-items: center;
 .inputRange {
 
 }
-.inputRange  span{
+.investDetails .inputRange  span{
 text-align: end;
 display: block;
 font-family: var(--fontFamilyMontserrat);
@@ -599,13 +599,13 @@ font-size: 16px;
 color: #FFFFFF80;
 margin-top: 4px;
 }
-input[type=range] {
+.investDetails input[type=range] {
    
     /* -webkit-appearance: none; */
    
     width: 100%;
   }
-  input[type="range"] {
+input[type="range"] {
     background: -webkit-linear-gradient(380deg,#D75594  90%, #2F38CC);
 	color: #D75594;
 	--thumb-height: 12px;
@@ -623,7 +623,7 @@ input[type=range] {
 
 
 /* === range commons === */
-input[type="range"] {
+.investDetails input[type="range"] {
 	position: relative;
 	background: #fff0;
 	overflow: hidden;
