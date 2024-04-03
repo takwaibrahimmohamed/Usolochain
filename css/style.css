@@ -20,7 +20,7 @@
 body{
     background-color: #04011F;
    
-   /* position: relative; */
+   position: relative;
     color: white;
  /* height: 1000px; */
 }
@@ -58,10 +58,13 @@ header{
     font-family: var(--fontFamilyDM);
 }
 .containder{
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+}
+.containder{
+    width: 1170px;
 }
 header .containder{
     display: flex;
@@ -1035,18 +1038,310 @@ font-weight: 500;
 
 /* startRespnsive */
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1039px) {
+@media  (max-width: 600px){
 
 }
+@media  (max-width: 600px) {
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .mainSection{
+        width: 100%;
+        height: fit-content;
+    }
+    section{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    footer{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .containder{
+       
+        /* padding-left: 20px;
+        padding-right: 20px; */
+        width: 100%;
+    }
+    .Ellipse1{
+        display: none;
+    }
+    .Ellipse2{
+        display: none;
+    }
+    header .containder{
+        gap:30px;
+    }
+    header .logo{
+        margin-left: -27px
+    }
+    header .containder,.headerRight,.headerRight ul{
+flex-direction: column;
+align-items: flex-start;
+gap: 25px;
+    }
+    .centerContent .image img{
+        width: 350px;
+    }
+    .centerContent .info{
+        left: 35%;
+        gap: 20px;
+    }
+    .centerContent .infocontent{
+        gap: 20px;
+    }
+    .centerContent .text h2{
+        font-size: 17px;
+    }
+    .brands{
+        margin-top: 0px;
+    }
+    .brands .containder{
+        flex-direction: column;
+    }
+    .brands .containder img{
+        object-fit: none;
+        height: 100px;
+    }
+    .Ourexperience .content .info h2{
+        font-size: 25px;
+    }
+    .Ourexperience .content{
+        text-align: start
+    }
+    .Ourexperience .content .info p{
+        width: 300px;
+        font-size: 12px;
+    }
+    .Ourexperience .cards{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Ourexperience .cards .box{
+        width: 100%;
+    }
+    .Ourexperience .cards .box.active{
+        margin-top: 0;
+    }
+    .investment {
+        margin-top: 0;
+    }
+    
+    .investment .content .info h4{
+        font-size: 35px;
+    }
+    .investment .content .info p{
+        font-size: 15px;
+    }
+    .investment .content .card{
+        flex-direction: column;
+        width: 100%;
+    }
+    .investment .content .card .box{
+     
+        width: 100%;
+    }
+    .investment .content .card .box:not(:last-child) {
+        border-bottom: 2px solid #FFF2F82B;
+        border-right: none;
+    }
+    .investment .content .card::after{
+        height: 0;
+    }
+    .investment .content .card .box:not(:first-child){
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    .investment .content .card .box .sectext {
+        font-size: 14px;
+        width: 97%;
+    }
+    .activeMember{
+        margin-top: 0;
+    }
+    .activeMember .content{
+        flex-direction: column;
+    }
+    .activeMember .containder{
+        padding-left:15px !important;
+    }
+    .activeMember .containder .image{
+        width: 300px;
+    }
+    .activeMember .containder .image img{
+        width: 100%;
+    }
+    .activeMember .content .details{
+        width: 100%;
+    }
+    .activeMember .content .details .box{
+        width: 100%;
+    }
+    .investDetails .content{
+        padding: 26px 25px 26px 25px;
+    }
+    .investDetails .info{
+        align-items: flex-start;
+    }
+    .investDetails .info .left h3{
+        font-size: 20px;
+    }
+    .investDetails .info .left .leftdetels{
+        gap: 20px;
+        flex-direction: column;
+    }
+    .investDetails .info .left .leftdetels p{
+        font-size: 17px;
+    }
+    .investDetails .info .right{
+        gap: 7px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+    .investDetails .btns .btn{
+        height: 36px;
+        line-height: 36px;
+        font-size: 15px;
+    }
+    .inputtext input{
+        font-size: 20px;
+    }
+    .inputtext span{
+        font-size: 20px;
+    }
+    .inputtext span::before {
+      
+        height: 46px;
+     
+        bottom: -10px;
+        left: -20px;
+    }
+    .organisation .card .table{
+        overflow-x: auto;
+    }
+    .organisation .card .info {
+        gap: 20px;
+}
+    .organisation .card .info .text, .organisation .card .info .num, .card p{
+        font-size: 15px;
+    }
+    .organisation{
+        background-image: none;
+        height: fit-content;
+    }
+    .organisation .content {
+        flex-direction: column;
+    }
+    .organisation .content .card{
+        width: 100%;
+    }
+    .organisation .content .card .link img{
+        width: 10px;
+    }
+    .organisation .content .card .link p{
+        font-size: 10px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .investDetails .info .right h3{
+        font-size: 14px;
+    }
+    .platform {
+        height: 100vh;
+    }
+    .platform .content .box h2{
+        font-size: 24px;
+    }
+    .platform .content .box p {
+        font-size: 15px;
+    }
+    .platform .content{
+        flex-direction: column;
+    }
+    .platform .content .box {
+        width: 100%;
+    }
+   
+    .platform .content .box img{
+width: 350px;
+display: none;
+    }
+    .platform .logo img{
+        width: 70px;
+        margin-right: -13px;
+    }
+    .platform .logo a{
+        font-size: 14px;
+        }
+        footer .icons{
+            gap: 10px;
+        }
+        footer .copyrignt p{
+            font-size: 12px;
+        }
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media  (min-width: 601px) and (max-width: 768px){
+    section{
+        width: 850px;
+    }
+    footer{
+        width: 850px;
+    }
+    .containder{
+        /* padding-left: 20px;
+        padding-right: 20px; */
+        width: 850px;
+    }
+    .containder{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    header .logo img{
+        width: 70px;
+        margin-right: -13px;
+    }
+    header .logo a{
+        font-size: 14px;
+        }
+        .headerRight ul {
+           gap: 10px;
+        }
+        .headerRight a {
+            font-size: 14px;
+        }
+        .changLang button{
+            padding: 4px 2px;
+        }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media  (min-width: 769px) and (max-width: 992px) {
+    section{
+        width: 970px;
+    }
+    footer{
+        width: 970px;
+    }
+    .containder{
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 970px;
+    }
+    .logo a{
+        font-size: 25px;
+        }
+        .headerRight a {
+            font-size: 14px;
+        }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
