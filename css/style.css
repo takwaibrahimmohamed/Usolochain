@@ -1295,6 +1295,9 @@ gap: 25px;
         object-fit: none;
         height: 100px;
     }
+    .Ourexperience .content .info{
+        align-items: center;
+    }
     .Ourexperience .content .info h2{
         font-size: 25px;
     }
@@ -1461,6 +1464,7 @@ font-size: 38px;
     }
     .platform .content{
         flex-direction: column;
+        gap: 34px;
     }
     .platform .content .box {
         width: 100%;
@@ -1475,7 +1479,7 @@ width: 350px;
 display: none;
     }
     .platform .logo{
-        bottom: -50%;
+        bottom: -30%;
         left: 21%;
     }
     .platform .logo img{
