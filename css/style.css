@@ -1289,17 +1289,32 @@ display: none;
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media  (min-width: 601px) and (max-width: 768px){
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .mainSection{
+        width: 100%;
+        height: fit-content;
+    }
     section{
-        width: 850px;
+        width: 100%;
+        overflow-x: hidden;
     }
     footer{
-        width: 850px;
+        width: 100%;
+        overflow-x: hidden;
     }
     .containder{
+       
         /* padding-left: 20px;
         padding-right: 20px; */
-        width: 850px;
+        width: 100%;
     }
+   
+   
     .containder{
         padding-left: 20px;
         padding-right: 20px;
@@ -1320,28 +1335,161 @@ display: none;
         .changLang button{
             padding: 4px 2px;
         }
+        .brands{
+            margin-top: 100px;
+            overflow: visible;
+        }
+        .brands .containder{
+            flex-wrap: wrap;
+        }
+        .Ourexperience .content .info p{
+            width: 100%;
+        }
+        .Ourexperience .cards{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .Ourexperience .cards .box.active{
+            margin-top: 0;
+        }
+        .investment .content .card{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .investment .content .card .box{
+         
+            width: 100%;
+        }
+        .investment .content .card .box:not(:last-child) {
+            border-bottom: 2px solid #FFF2F82B;
+            border-right: none;
+        }
+        .investment .content .card::after{
+            height: 0;
+        }
+        .investment .content .card .box:not(:first-child){
+            padding-left: 0;
+            padding-top: 20px;
+        }
+        .activeMember .image{
+            width: 100%;
+        }
+        .investDetails{
+            overflow: visible;
+        }
+        .activeMember .image img{
+            width: 100%;
+        }
+        .investDetails .info .right{
+            text-align: end;
+        }
+        .organisation{
+            overflow: visible;
+            height: 200vh;
+        }
+        .organisation .content{
+            flex-direction: column;
+        }
+        .organisation .content .card{
+            width: 100%;
+        }
+        .platform{
+            overflow: visible;
+        }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media  (min-width: 769px) and (max-width: 992px) {
+@media  (min-width: 769px) and (max-width: 1024px) {
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .mainSection{
+        width: 100%;
+        height: fit-content;
+    }
     section{
-        width: 970px;
+        width: 100%;
+        /* overflow-x: hidden; */
     }
     footer{
-        width: 970px;
+        width: 100%;
+        overflow-x: hidden;
     }
+    .containder{
+       
+        /* padding-left: 20px;
+        padding-right: 20px; */
+        width: 100%;
+    }
+   
+    
     .containder{
         padding-left: 20px;
         padding-right: 20px;
-        width: 970px;
+        
     }
-    .logo a{
+    .brands .containder{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+    /* .logo a{
         font-size: 25px;
         }
         .headerRight a {
             font-size: 14px;
+        } */
+        .link p{
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .activeMember .image{
+            width: 100%;
+        }
+        .activeMember .image img{
+            width: 100%;
+        }
+        .investment .content{
+            padding-top: 40px;
+        }
+        .investment .content .card .box {
+            width: 330px;
+        }
+        
+
+        .platform{
+            height: 100vh;
         }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width:993px){
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    /* .mainSection{
+        width: 100%;
+        height: fit-content;
+    }
+    section{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    footer{
+        width: 100%;
+        overflow-x: hidden;
+    } */
+    .containder{
+       
+        /* padding-left: 20px;
+        padding-right: 20px; */
+        /* width: 100%; */
+    }
+}
 
