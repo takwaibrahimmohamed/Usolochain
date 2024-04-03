@@ -1038,9 +1038,7 @@ font-weight: 500;
 
 /* startRespnsive */
 /* Extra small devices (phones, 600px and down) */
-@media  (max-width: 600px){
 
-}
 @media  (max-width: 600px) {
     html{
         overflow-x: hidden;
@@ -1076,7 +1074,10 @@ font-weight: 500;
         gap:30px;
     }
     header .logo{
-        margin-left: -27px
+        margin-left: 0px
+    }
+    .headerRight{
+display: none;
     }
     header .containder,.headerRight,.headerRight ul{
 flex-direction: column;
@@ -1110,7 +1111,7 @@ gap: 25px;
         font-size: 25px;
     }
     .Ourexperience .content{
-        text-align: start
+        text-align: center
     }
     .Ourexperience .content .info p{
         width: 300px;
@@ -1129,9 +1130,14 @@ gap: 25px;
     .investment {
         margin-top: 0;
     }
-    
+    .investment .content{
+        text-align: center;
+    }
     .investment .content .info h4{
-        font-size: 35px;
+        font-size: 23px;
+    }
+    .investment .content .card .box h3 {
+        font-size: 20px;
     }
     .investment .content .info p{
         font-size: 15px;
@@ -1141,8 +1147,10 @@ gap: 25px;
         width: 100%;
     }
     .investment .content .card .box{
-     
+     text-align: center;
+     align-items: center;
         width: 100%;
+        padding-right: 0 !important;
     }
     .investment .content .card .box:not(:last-child) {
         border-bottom: 2px solid #FFF2F82B;
@@ -1159,6 +1167,10 @@ gap: 25px;
         font-size: 14px;
         width: 97%;
     }
+    .topUser h2 {
+font-size: 38px;
+
+}
     .activeMember{
         margin-top: 0;
     }
@@ -1264,6 +1276,8 @@ gap: 25px;
     }
     .platform .content .box {
         width: 100%;
+        text-align: center;
+        align-items: center;
     }
    
     .platform .content .box img{
@@ -1434,7 +1448,7 @@ display: none;
     .brands .containder{
         flex-wrap: wrap;
         justify-content: space-around;
-        
+
     }
     /* .logo a{
         font-size: 25px;
