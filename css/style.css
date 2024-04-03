@@ -991,8 +991,9 @@ gap: 10px;
   
   .line {
     position:absolute;
-    background:rgb(215, 85, 148);
-    -webkit-backface-visibility: hidden;
+    /* background:rgba(87, 193, 232, 0.35); */
+    background:purple;
+  -webkit-backface-visibility: hidden;
   }
   
   .vertical .line {
@@ -1001,7 +1002,7 @@ gap: 10px;
     bottom:0;
     width:5px;
    
-    background: linear-gradient(top, rgb(47, 56, 204), purple);
+    background: linear-gradient(top, rgba(255,255,255,0), purple);
     &:nth-child(1) {
       left:10%;
     }
@@ -1090,7 +1091,7 @@ gap: 10px;
   
   .dot {
     position:absolute;
-    background:rgb(215, 85, 148);
+    background:#fff;
     width: 5px;
     height: 5px;
     top:100%;
@@ -1366,7 +1367,7 @@ font-size: 38px;
         margin-top: 0;
     }
     .activeMember .content{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .activeMember .containder{
         padding-left:15px !important;
