@@ -1623,17 +1623,21 @@ line-height: 30px;
 flex-direction: column;
     align-items: center;
     gap: 30px;
-    width: 50%;
+    width: 100%;
+    position: relative;
 }
 .activeMember .content .details .box{
     border: 2px solid transparent;
-    background: 
+    /* background: 
     linear-gradient(390deg, #04011fd3, #04011fd3), 
+    linear-gradient(390deg, #D75594, #2F38CC);  */
+    background: 
+    
     linear-gradient(390deg, #D75594, #2F38CC); 
-  background-clip: padding-box, border-box;
-  background-origin: padding-box, border-box;
+  /* background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box; */
   border-radius: 5px;
-  width: 350px;
+  width: 100%;
   height: 100px;
   display: flex;
   flex-direction: column;
@@ -2596,7 +2600,8 @@ font-size: 38px;
 
 }
     .activeMember{
-        margin-top: 0;
+        margin-top: 50px;
+        overflow-x: visible;
     }
     .activeMember .content{
         flex-direction: column-reverse;
@@ -2615,6 +2620,9 @@ font-size: 38px;
     }
     .activeMember .content .details .box{
         width: 100%;
+    }
+    .investDetails{
+        margin-top: 150px;
     }
     .investDetails .content{
         padding: 26px 25px 26px 25px;
