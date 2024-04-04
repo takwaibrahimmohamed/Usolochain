@@ -2390,7 +2390,7 @@ gap: 10px;
 .platform .content{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     gap: 30px;
     position: relative;
     z-index: 222;
@@ -2430,7 +2430,7 @@ gap: 10px;
 .platform .logo{
 position: absolute;
 left: 42%;
-bottom: -20%;
+bottom: 0%;
 transform: translate(-50px,-50px);
 z-index: 111;
 }
@@ -2741,7 +2741,7 @@ width: 350px;
 display: none;
     }
     .platform .logo{
-        bottom: -30%;
+        bottom: -5%;
         left: 21%;
     }
     .platform .logo img{
@@ -2880,7 +2880,7 @@ display: none;
             width: 100%;
         }
         .platform{
-            overflow: visible;
+            height: 150vh;
         }
 }
 
@@ -2946,9 +2946,7 @@ display: none;
         }
         
 
-        .platform{
-            height: 100vh;
-        }
+      
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
