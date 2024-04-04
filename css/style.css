@@ -32,6 +32,12 @@ ul{
     list-style: none;
 
 }
+canvas{
+    /* position: absolute; */
+    /* top: 0; */
+    /* z-index: -1; */
+    width: 500px !important;
+}
 .mainSection{
     background: url(../images/heroImage.jpg) no-repeat;
     height: 100vh;
@@ -130,11 +136,13 @@ padding: 7px 5px;
     
 }
 .centerContent .content{
-
+overflow-x: hidden;
 }
 .centerContent .image{
     /* display: flex;
     justify-content: center; */
+    max-height: 100vh;
+    overflow: hidden;
     
 }
 .centerContent .image img{
@@ -143,7 +151,7 @@ padding: 7px 5px;
 }
 .centerContent .info{
 position: absolute;
-top: 50%;
+top: 53%;
 left: 47%;
 transform: translate(-200px,-100px);
 display: flex;
