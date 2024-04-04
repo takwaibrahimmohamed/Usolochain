@@ -39,7 +39,7 @@ canvas{
     /* position: absolute; */
     /* top: 0; */
     /* z-index: -1; */
-    width: 500px !important;
+    width: 1500px !important;
     /* height: 472px !important; */
 }
 .mainSection{
@@ -132,7 +132,8 @@ border-radius: 5px;
 padding: 7px 5px;
 }
 .centerContent{
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    overflow: hidden;
     position: relative;
     /* z-index: 11; */
     display: flex;
@@ -161,13 +162,13 @@ left: 47%;
 transform: translate(-200px,-100px);
 display: flex;
 flex-direction: column;
-gap: 30px;
+gap: 10px;
 text-align: center;
 }
 .centerContent .infocontent{
     display: flex;
 flex-direction: column;
-gap: 30px;
+gap: 10px;
 width: 500px;
 text-align: center;
 justify-content: center;
@@ -448,7 +449,9 @@ line-height: 30px;
     color: purple;
     font: 1.1em/ 2 vt323, monospace;
 }
-
+.colH{
+    display: none;
+}
 .helix {
     top: 45%;
     left: 50%;
@@ -1634,23 +1637,23 @@ line-height: 30px;
 .activeMember .content .details{
     display: flex;
 flex-direction: column;
-    align-items: center;
+    align-items: end;
     gap: 30px;
     width: 100%;
     position: relative;
 }
 .activeMember .content .details .box{
     border: 2px solid transparent;
-    /* background: 
-    linear-gradient(390deg, #04011fd3, #04011fd3), 
-    linear-gradient(390deg, #D75594, #2F38CC);  */
     background: 
+    linear-gradient(390deg, #04011fd3, #04011fd3), 
+    linear-gradient(390deg, #D75594, #2F38CC); 
+    /* background: 
     
-    linear-gradient(390deg, #682c49, #1d248c); 
-  /* background-clip: padding-box, border-box;
-  background-origin: padding-box, border-box; */
+    linear-gradient(390deg, #682c49, #1d248c);  */
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
   border-radius: 5px;
-  width: 100%;
+  width: 50%;
   height: 100px;
   display: flex;
   flex-direction: column;
@@ -1665,7 +1668,8 @@ flex-direction: column;
 
 }
 .activeMember .content .details .box h3 span{
-    color: #D75594;
+    background: -webkit-linear-gradient(top, rgb(215, 85, 148) 20%, rgb(47, 56, 204)) text;
+    -webkit-text-fill-color: transparent;
 }
 .activeMember .content .details .box p{
     font-family: var(--fontFamilyMontserrat);
@@ -2757,6 +2761,12 @@ display: none;
         .helix{
             top: 55%;
         }
+        canvas{
+            width: 500px !important;
+        }
+        .colH{
+            display: block;
+        }
 }
 
 
@@ -2787,7 +2797,9 @@ display: none;
         padding-right: 20px; */
         width: 100%;
     }
-   
+   .activeMember{
+    overflow: visible;
+   }
    
     .containder{
         padding-left: 20px;
