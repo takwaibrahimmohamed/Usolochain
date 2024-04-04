@@ -132,7 +132,7 @@ border-radius: 5px;
 padding: 7px 5px;
 }
 .centerContent{
-    /* margin-top: 50px; */
+    margin-top: 50px;
     position: relative;
     /* z-index: 11; */
     display: flex;
@@ -2722,6 +2722,7 @@ font-size: 38px;
     .platform .content{
         flex-direction: column;
         gap: 34px;
+        margin-top: -40px;
     }
     .platform .content .box {
         width: 100%;
@@ -2729,7 +2730,7 @@ font-size: 38px;
         align-items: center;
     }
     .grid-wrapper{
-        top: -120px;
+        top: -50px;
     }
     .platform .content .box img{
 width: 350px;
