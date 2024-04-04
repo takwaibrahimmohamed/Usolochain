@@ -1,4 +1,7 @@
 /* fonts  */
+
+/* linear-gradient(390deg, #682c49, #1d248c) */
+
 @font-face {
     font-family: Alien Energy sans-serif;
     src: url(../font/AlienEnergy.ttf);
@@ -37,6 +40,7 @@ canvas{
     /* top: 0; */
     /* z-index: -1; */
     width: 500px !important;
+    /* height: 472px !important; */
 }
 .mainSection{
     background: url(../images/heroImage.jpg) no-repeat;
@@ -128,7 +132,7 @@ border-radius: 5px;
 padding: 7px 5px;
 }
 .centerContent{
-    margin-top: 50px;
+    /* margin-top: 50px; */
     position: relative;
     /* z-index: 11; */
     display: flex;
@@ -137,11 +141,12 @@ padding: 7px 5px;
 }
 .centerContent .content{
 overflow-x: hidden;
+/* max-height: 100vh; */
 }
 .centerContent .image{
     /* display: flex;
     justify-content: center; */
-    max-height: 100vh;
+    /* max-height: 100vh; */
     overflow: hidden;
     
 }
@@ -151,7 +156,7 @@ overflow-x: hidden;
 }
 .centerContent .info{
 position: absolute;
-top: 53%;
+top: 48%;
 left: 47%;
 transform: translate(-200px,-100px);
 display: flex;
@@ -1582,7 +1587,7 @@ line-height: 30px;
     overflow: hidden;
     width: 2em;
     height: 2em;
-    background: radial-gradient(closest-side, #D75594, rgba(0, 255, 0, 0)) 50% / 2em 1.5em no-repeat;
+    background: radial-gradient(closest-side, #2F38CC, rgba(0, 255, 0, 0)) 50% / 2em 1.5em no-repeat;
     text-align: center;
     animation: inherit;
     animation-direction: reverse;
@@ -1641,7 +1646,7 @@ flex-direction: column;
     linear-gradient(390deg, #D75594, #2F38CC);  */
     background: 
     
-    linear-gradient(390deg, #D75594, #2F38CC); 
+    linear-gradient(390deg, #682c49, #1d248c); 
   /* background-clip: padding-box, border-box;
   background-origin: padding-box, border-box; */
   border-radius: 5px;
@@ -2193,7 +2198,7 @@ gap: 10px;
     font-size: 12px;
 }
 .platform{
-    margin-top: 100px;
+    /* margin-top: 100px; */
     position: relative;
     /* background-image: url(../images/Vectorbg.png); */
     /* background-position: center;
@@ -2530,6 +2535,9 @@ gap: 25px;
     .centerContent .text h2{
         font-size: 17px;
     }
+    .centerContent .info{
+       
+        top: 54%;}
     .brands{
         margin-top: 0px;
     }
