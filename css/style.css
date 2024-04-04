@@ -422,6 +422,7 @@ line-height: 30px;
 
 .activeMember{
     margin-top:100px;
+    position: relative;
 }
 .activeMember .content{
     display: flex;
@@ -429,171 +430,1193 @@ line-height: 30px;
     align-items: center;
 }
 /* dnaanim */
-.dna{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* min-height: 100vh; */
+.helix,.col,.pos{
+    position: absolute;
+    color: purple;
+    font: 1.1em/ 2 vt323, monospace;
+}
+
+.helix {
+    top: 45%;
+    left: 50%;
+    transform-style: preserve-3d;
+}
+.col {
+    transform-style: preserve-3d;
+    animation: rx 10s linear infinite;
+}
+.col:nth-child(1) {
+    left: -30em;
+    animation-delay: 0s;
+}
+.col:nth-child(1) :nth-child(1):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(1) :nth-child(2):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(1) :nth-child(3):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(1) :nth-child(4):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(1) :nth-child(5):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(1) :nth-child(6):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(1) :nth-child(7):before {
+    animation-delay: -1s;
+}
+.col:nth-child(1) :nth-child(8):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(2) {
+    left: -28.5em;
+    animation-delay: -0.25s;
+}
+.col:nth-child(2) :nth-child(1):before {
+    animation-delay: -2s;
+}
+.col:nth-child(2) :nth-child(2):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(2) :nth-child(3):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(2) :nth-child(4):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(2) :nth-child(5):before {
+    animation-delay: -2s;
+}
+.col:nth-child(2) :nth-child(6):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(2) :nth-child(7):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(2) :nth-child(8):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(3) {
+    left: -27em;
+    animation-delay: -0.5s;
+}
+.col:nth-child(3) :nth-child(1):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(3) :nth-child(2):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(3) :nth-child(3):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(3) :nth-child(4):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(3) :nth-child(5):before {
+    animation-delay: -1s;
+}
+.col:nth-child(3) :nth-child(6):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(3) :nth-child(7):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(3) :nth-child(8):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(4) {
+    left: -25.5em;
+    animation-delay: -0.75s;
+}
+.col:nth-child(4) :nth-child(1):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(4) :nth-child(2):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(4) :nth-child(3):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(4) :nth-child(4):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(4) :nth-child(5):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(4) :nth-child(6):before {
+    animation-delay: -1s;
+}
+.col:nth-child(4) :nth-child(7):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(4) :nth-child(8):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(5) {
+    left: -24em;
+    animation-delay: -1s;
+}
+.col:nth-child(5) :nth-child(1):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(5) :nth-child(2):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(5) :nth-child(3):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(5) :nth-child(4):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(5) :nth-child(5):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(5) :nth-child(6):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(5) :nth-child(7):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(5) :nth-child(8):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(6) {
+    left: -22.5em;
+    animation-delay: -1.25s;
+}
+.col:nth-child(6) :nth-child(1):before {
+    animation-delay: -1s;
+}
+.col:nth-child(6) :nth-child(2):before {
+    animation-delay: -2s;
+}
+.col:nth-child(6) :nth-child(3):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(6) :nth-child(4):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(6) :nth-child(5):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(6) :nth-child(6):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(6) :nth-child(7):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(6) :nth-child(8):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(7) {
+    left: -21em;
+    animation-delay: -1.5s;
+}
+.col:nth-child(7) :nth-child(1):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(7) :nth-child(2):before {
+    animation-delay: -2s;
+}
+.col:nth-child(7) :nth-child(3):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(7) :nth-child(4):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(7) :nth-child(5):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(7) :nth-child(6):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(7) :nth-child(7):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(7) :nth-child(8):before {
+    animation-delay: -2s;
+}
+.col:nth-child(8) {
+    left: -19.5em;
+    animation-delay: -1.75s;
+}
+.col:nth-child(8) :nth-child(1):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(8) :nth-child(2):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(8) :nth-child(3):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(8) :nth-child(4):before {
+    animation-delay: -1s;
+}
+.col:nth-child(8) :nth-child(5):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(8) :nth-child(6):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(8) :nth-child(7):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(8) :nth-child(8):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(9) {
+    left: -18em;
+    animation-delay: -2s;
+}
+.col:nth-child(9) :nth-child(1):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(9) :nth-child(2):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(9) :nth-child(3):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(9) :nth-child(4):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(9) :nth-child(5):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(9) :nth-child(6):before {
+    animation-delay: -2s;
+}
+.col:nth-child(9) :nth-child(7):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(9) :nth-child(8):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(10) {
+    left: -16.5em;
+    animation-delay: -2.25s;
+}
+.col:nth-child(10) :nth-child(1):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(10) :nth-child(2):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(10) :nth-child(3):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(10) :nth-child(4):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(10) :nth-child(5):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(10) :nth-child(6):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(10) :nth-child(7):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(10) :nth-child(8):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(11) {
+    left: -15em;
+    animation-delay: -2.5s;
+}
+.col:nth-child(11) :nth-child(1):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(11) :nth-child(2):before {
+    animation-delay: -2s;
+}
+.col:nth-child(11) :nth-child(3):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(11) :nth-child(4):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(11) :nth-child(5):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(11) :nth-child(6):before {
+    animation-delay: -1s;
+}
+.col:nth-child(11) :nth-child(7):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(11) :nth-child(8):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(12) {
+    left: -13.5em;
+    animation-delay: -2.75s;
+}
+.col:nth-child(12) :nth-child(1):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(12) :nth-child(2):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(12) :nth-child(3):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(12) :nth-child(4):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(12) :nth-child(5):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(12) :nth-child(6):before {
+    animation-delay: -2s;
+}
+.col:nth-child(12) :nth-child(7):before {
+    animation-delay: -2s;
+}
+.col:nth-child(12) :nth-child(8):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(13) {
+    left: -12em;
+    animation-delay: -3s;
+}
+.col:nth-child(13) :nth-child(1):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(13) :nth-child(2):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(13) :nth-child(3):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(13) :nth-child(4):before {
+    animation-delay: -1s;
+}
+.col:nth-child(13) :nth-child(5):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(13) :nth-child(6):before {
+    animation-delay: -1s;
+}
+.col:nth-child(13) :nth-child(7):before {
+    animation-delay: -1s;
+}
+.col:nth-child(13) :nth-child(8):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(14) {
+    left: -10.5em;
+    animation-delay: -3.25s;
+}
+.col:nth-child(14) :nth-child(1):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(14) :nth-child(2):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(14) :nth-child(3):before {
+    animation-delay: -1s;
+}
+.col:nth-child(14) :nth-child(4):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(14) :nth-child(5):before {
+    animation-delay: -2s;
+}
+.col:nth-child(14) :nth-child(6):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(14) :nth-child(7):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(14) :nth-child(8):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(15) {
+    left: -9em;
+    animation-delay: -3.5s;
+}
+.col:nth-child(15) :nth-child(1):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(15) :nth-child(2):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(15) :nth-child(3):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(15) :nth-child(4):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(15) :nth-child(5):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(15) :nth-child(6):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(15) :nth-child(7):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(15) :nth-child(8):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(16) {
+    left: -7.5em;
+    animation-delay: -3.75s;
+}
+.col:nth-child(16) :nth-child(1):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(16) :nth-child(2):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(16) :nth-child(3):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(16) :nth-child(4):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(16) :nth-child(5):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(16) :nth-child(6):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(16) :nth-child(7):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(16) :nth-child(8):before {
+    animation-delay: -2s;
+}
+.col:nth-child(17) {
+    left: -6em;
+    animation-delay: -4s;
+}
+.col:nth-child(17) :nth-child(1):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(17) :nth-child(2):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(17) :nth-child(3):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(17) :nth-child(4):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(17) :nth-child(5):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(17) :nth-child(6):before {
+    animation-delay: -1s;
+}
+.col:nth-child(17) :nth-child(7):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(17) :nth-child(8):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(18) {
+    left: -4.5em;
+    animation-delay: -4.25s;
+}
+.col:nth-child(18) :nth-child(1):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(18) :nth-child(2):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(18) :nth-child(3):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(18) :nth-child(4):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(18) :nth-child(5):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(18) :nth-child(6):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(18) :nth-child(7):before {
+    animation-delay: -1s;
+}
+.col:nth-child(18) :nth-child(8):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(19) {
+    left: -3em;
+    animation-delay: -4.5s;
+}
+.col:nth-child(19) :nth-child(1):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(19) :nth-child(2):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(19) :nth-child(3):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(19) :nth-child(4):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(19) :nth-child(5):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(19) :nth-child(6):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(19) :nth-child(7):before {
+    animation-delay: -2s;
+}
+.col:nth-child(19) :nth-child(8):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(20) {
+    left: -1.5em;
+    animation-delay: -4.75s;
+}
+.col:nth-child(20) :nth-child(1):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(20) :nth-child(2):before {
+    animation-delay: -2s;
+}
+.col:nth-child(20) :nth-child(3):before {
+    animation-delay: -2s;
+}
+.col:nth-child(20) :nth-child(4):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(20) :nth-child(5):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(20) :nth-child(6):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(20) :nth-child(7):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(20) :nth-child(8):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(21) {
+    left: 0em;
+    animation-delay: -5s;
+}
+.col:nth-child(21) :nth-child(1):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(21) :nth-child(2):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(21) :nth-child(3):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(21) :nth-child(4):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(21) :nth-child(5):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(21) :nth-child(6):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(21) :nth-child(7):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(21) :nth-child(8):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(22) {
+    left: 1.5em;
+    animation-delay: -5.25s;
+}
+.col:nth-child(22) :nth-child(1):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(22) :nth-child(2):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(22) :nth-child(3):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(22) :nth-child(4):before {
+    animation-delay: -2s;
+}
+.col:nth-child(22) :nth-child(5):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(22) :nth-child(6):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(22) :nth-child(7):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(22) :nth-child(8):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(23) {
+    left: 3em;
+    animation-delay: -5.5s;
+}
+.col:nth-child(23) :nth-child(1):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(23) :nth-child(2):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(23) :nth-child(3):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(23) :nth-child(4):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(23) :nth-child(5):before {
+    animation-delay: -1s;
+}
+.col:nth-child(23) :nth-child(6):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(23) :nth-child(7):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(23) :nth-child(8):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(24) {
+    left: 4.5em;
+    animation-delay: -5.75s;
+}
+.col:nth-child(24) :nth-child(1):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(24) :nth-child(2):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(24) :nth-child(3):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(24) :nth-child(4):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(24) :nth-child(5):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(24) :nth-child(6):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(24) :nth-child(7):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(24) :nth-child(8):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(25) {
+    left: 6em;
+    animation-delay: -6s;
+}
+.col:nth-child(25) :nth-child(1):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(25) :nth-child(2):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(25) :nth-child(3):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(25) :nth-child(4):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(25) :nth-child(5):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(25) :nth-child(6):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(25) :nth-child(7):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(25) :nth-child(8):before {
+    animation-delay: -1s;
+}
+.col:nth-child(26) {
+    left: 7.5em;
+    animation-delay: -6.25s;
+}
+.col:nth-child(26) :nth-child(1):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(26) :nth-child(2):before {
+    animation-delay: -1s;
+}
+.col:nth-child(26) :nth-child(3):before {
+    animation-delay: -1s;
+}
+.col:nth-child(26) :nth-child(4):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(26) :nth-child(5):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(26) :nth-child(6):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(26) :nth-child(7):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(26) :nth-child(8):before {
+    animation-delay: -1s;
+}
+.col:nth-child(27) {
+    left: 9em;
+    animation-delay: -6.5s;
+}
+.col:nth-child(27) :nth-child(1):before {
+    animation-delay: -2s;
+}
+.col:nth-child(27) :nth-child(2):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(27) :nth-child(3):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(27) :nth-child(4):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(27) :nth-child(5):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(27) :nth-child(6):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(27) :nth-child(7):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(27) :nth-child(8):before {
+    animation-delay: -1s;
+}
+.col:nth-child(28) {
+    left: 10.5em;
+    animation-delay: -6.75s;
+}
+.col:nth-child(28) :nth-child(1):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(28) :nth-child(2):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(28) :nth-child(3):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(28) :nth-child(4):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(28) :nth-child(5):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(28) :nth-child(6):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(28) :nth-child(7):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(28) :nth-child(8):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(29) {
+    left: 12em;
+    animation-delay: -7s;
+}
+.col:nth-child(29) :nth-child(1):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(29) :nth-child(2):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(29) :nth-child(3):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(29) :nth-child(4):before {
+    animation-delay: -1s;
+}
+.col:nth-child(29) :nth-child(5):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(29) :nth-child(6):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(29) :nth-child(7):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(29) :nth-child(8):before {
+    animation-delay: -1s;
+}
+.col:nth-child(30) {
+    left: 13.5em;
+    animation-delay: -7.25s;
+}
+.col:nth-child(30) :nth-child(1):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(30) :nth-child(2):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(30) :nth-child(3):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(30) :nth-child(4):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(30) :nth-child(5):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(30) :nth-child(6):before {
+    animation-delay: -1s;
+}
+.col:nth-child(30) :nth-child(7):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(30) :nth-child(8):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(31) {
+    left: 15em;
+    animation-delay: -7.5s;
+}
+.col:nth-child(31) :nth-child(1):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(31) :nth-child(2):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(31) :nth-child(3):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(31) :nth-child(4):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(31) :nth-child(5):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(31) :nth-child(6):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(31) :nth-child(7):before {
+    animation-delay: -1s;
+}
+.col:nth-child(31) :nth-child(8):before {
+    animation-delay: -2s;
+}
+.col:nth-child(32) {
+    left: 16.5em;
+    animation-delay: -7.75s;
+}
+.col:nth-child(32) :nth-child(1):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(32) :nth-child(2):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(32) :nth-child(3):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(32) :nth-child(4):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(32) :nth-child(5):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(32) :nth-child(6):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(32) :nth-child(7):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(32) :nth-child(8):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(33) {
+    left: 18em;
+    animation-delay: -8s;
+}
+.col:nth-child(33) :nth-child(1):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(33) :nth-child(2):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(33) :nth-child(3):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(33) :nth-child(4):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(33) :nth-child(5):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(33) :nth-child(6):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(33) :nth-child(7):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(33) :nth-child(8):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(34) {
+    left: 19.5em;
+    animation-delay: -8.25s;
+}
+.col:nth-child(34) :nth-child(1):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(34) :nth-child(2):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(34) :nth-child(3):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(34) :nth-child(4):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(34) :nth-child(5):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(34) :nth-child(6):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(34) :nth-child(7):before {
+    animation-delay: -1s;
+}
+.col:nth-child(34) :nth-child(8):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(35) {
+    left: 21em;
+    animation-delay: -8.5s;
+}
+.col:nth-child(35) :nth-child(1):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(35) :nth-child(2):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(35) :nth-child(3):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(35) :nth-child(4):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(35) :nth-child(5):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(35) :nth-child(6):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(35) :nth-child(7):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(35) :nth-child(8):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(36) {
+    left: 22.5em;
+    animation-delay: -8.75s;
+}
+.col:nth-child(36) :nth-child(1):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(36) :nth-child(2):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(36) :nth-child(3):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(36) :nth-child(4):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(36) :nth-child(5):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(36) :nth-child(6):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(36) :nth-child(7):before {
+    animation-delay: -1s;
+}
+.col:nth-child(36) :nth-child(8):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(37) {
+    left: 24em;
+    animation-delay: -9s;
+}
+.col:nth-child(37) :nth-child(1):before {
+    animation-delay: -2s;
+}
+.col:nth-child(37) :nth-child(2):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(37) :nth-child(3):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(37) :nth-child(4):before {
+    animation-delay: -2s;
+}
+.col:nth-child(37) :nth-child(5):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(37) :nth-child(6):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(37) :nth-child(7):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(37) :nth-child(8):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(38) {
+    left: 25.5em;
+    animation-delay: -9.25s;
+}
+.col:nth-child(38) :nth-child(1):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(38) :nth-child(2):before {
+    animation-delay: -1.2s;
+}
+.col:nth-child(38) :nth-child(3):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(38) :nth-child(4):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(38) :nth-child(5):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(38) :nth-child(6):before {
+    animation-delay: -2s;
+}
+.col:nth-child(38) :nth-child(7):before {
+    animation-delay: -1s;
+}
+.col:nth-child(38) :nth-child(8):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(39) {
+    left: 27em;
+    animation-delay: -9.5s;
+}
+.col:nth-child(39) :nth-child(1):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(39) :nth-child(2):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(39) :nth-child(3):before {
+    animation-delay: -0.4s;
+}
+.col:nth-child(39) :nth-child(4):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(39) :nth-child(5):before {
+    animation-delay: -1.6s;
+}
+.col:nth-child(39) :nth-child(6):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(39) :nth-child(7):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(39) :nth-child(8):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(40) {
+    left: 28.5em;
+    animation-delay: -9.75s;
+}
+.col:nth-child(40) :nth-child(1):before {
+    animation-delay: -1.8s;
+}
+.col:nth-child(40) :nth-child(2):before {
+    animation-delay: -0.2s;
+}
+.col:nth-child(40) :nth-child(3):before {
+    animation-delay: -1.4s;
+}
+.col:nth-child(40) :nth-child(4):before {
+    animation-delay: -2s;
+}
+.col:nth-child(40) :nth-child(5):before {
+    animation-delay: -0.8s;
+}
+.col:nth-child(40) :nth-child(6):before {
+    animation-delay: -2s;
+}
+.col:nth-child(40) :nth-child(7):before {
+    animation-delay: -0.6s;
+}
+.col:nth-child(40) :nth-child(8):before {
+    animation-delay: -0.6s;
+}
+@keyframes rx {
+    0% {
+        transform: rotateX(1turn);
+   }
+}
+.pos {
+    overflow: hidden;
+    width: 2em;
+    height: 2em;
+    background: radial-gradient(closest-side, #D75594, rgba(0, 255, 0, 0)) 50% / 2em 1.5em no-repeat;
     text-align: center;
-    margin:0;
-    padding:0;
-   
-    /* transform-style: preserve-3d; */
+    animation: inherit;
+    animation-direction: reverse;
 }
-
-.dna span{
-    position: relative;
-    height: 200px;
-    width:1px;
-    transform-style: preserve-3d;
-    background-color: bisque;
-    margin-left: 20px;
-    border: 1px solid #D75594;
-    transform:  perspective(600px);
-    animation: animation 2.5s linear infinite;
-    box-shadow: 10px 5px 50px #dfe6cc;
+.pos:nth-child(1) {
+    top: -10em;
 }
-.dna span::before{
-    content:"";
+.pos:nth-child(2) {
+    top: -7.5em;
+}
+.pos:nth-child(3) {
+    top: -5em;
+}
+.pos:nth-child(4) {
+    top: -2.5em;
+}
+.pos:nth-child(5) {
+    top: 0em;
+}
+.pos:nth-child(6) {
+    top: 2.5em;
+}
+.pos:nth-child(7) {
+    top: 5em;
+}
+.pos:nth-child(8) {
+    top: 7.5em;
+}
+.pos:before {
     position: absolute;
-    top:-5px;
-    transform-origin: top;
-    width:20px;
-    height:20px;
-    background-color: #D75594;
-    border-radius: 50px;
-    left: -8px;
-    transform-style: preserve-3d;
-    box-shadow: 0px 0px 20px  #D75594,  inset 5px 5px 10px #000;
-  
+    left: 0;
+    width: inherit;
+    word-spacing: 1em;
+    animation: switch 2s steps(10) infinite;
+    content: " 0 1 2 3 4 5 6 7 8 9";
 }
-/* #D75594, #2F38CC,purple */
-.dna span::after{
-    content:"";
-    position: absolute;
-    bottom:0;
-    transform-origin: bottom;
-    width:20px;
-    height:20px;
-    background-color: purple;
-    border-radius: 50px;
-    bottom: -5px;
-    left: -8px;
-    transform-style: preserve-3d;
-    box-shadow: 0px 0px 20px purple, inset 5px 5px 10px #000 ;
-}
-.dna span:nth-child(1){
-    animation-delay: 0.1s;
-}
-.dna span:nth-child(2){
-    animation-delay: 0.2s;
-}
-.dna span:nth-child(3){
-    animation-delay: 0.3s;
-}
-.dna span:nth-child(4){
-    animation-delay: 0.4s;
-}
-.dna span:nth-child(5){
-    animation-delay: 0.5s;
-}
-.dna span:nth-child(6){
-    animation-delay: 0.6s;
-}
-.dna span:nth-child(7){
-    animation-delay: 0.7s;
-}
-.dna span:nth-child(8){
-    animation-delay: 0.8s;
-}
-.dna span:nth-child(9){
-    animation-delay: 1s;
-}
-.dna span:nth-child(10){
-    animation-delay: 1.1s;
-}
-.dna span:nth-child(11){
-    animation-delay: 1.2s;
-}
-.dna span:nth-child(12){
-    animation-delay: 1.3s;
-}
-.dna span:nth-child(13){
-    animation-delay: 1.4s;
-}
-.dna span:nth-child(14){
-    animation-delay: 1.5s;
+@keyframes switch {
+    to {
+        transform: translateY(-20em);
+   }
 }
 
-.dna span:nth-child(15){
-    animation-delay: 1.6s;
-}
-.dna span:nth-child(16){
-    animation-delay: 1.7s;
-}
-.dna span:nth-child(17){
-    animation-delay: 1.8s;
-}
-.dna span:nth-child(18){
-    animation-delay: 1.9s;
-}
-.dna span:nth-child(19){
-    animation-delay: 2s;
-}
-.dna span:nth-child(20){
-    animation-delay: 2.1s;
-}
-.dna span:nth-child(21){
-    animation-delay: 2.2s;
-}
-.dna span:nth-child(22){
-    animation-delay: 2.3s;
-}
-.dna span:nth-child(23){
-    animation-delay: 2.4s;
-}
-.dna span:nth-child(24){
-    animation-delay:2.5s;
-}
-.dna span:nth-child(25){
-    animation-delay: 2.6s;
-}
-.dna span:nth-child(26){
-    animation-delay: 2.7s;
-}
-.dna span:nth-child(27){
-    animation-delay: 2.8s;
-}
-.dna span:nth-child(28){
-    animation-delay: 2.9s;
-}
-.dna span:nth-child(29){
-    animation-delay: 3s;
-}
-.dna span:nth-child(30){
-    animation-delay: 3.1s;
-}
-.dna span:nth-child(31){
-    animation-delay: 3.2s;
-}
-.dna span:nth-child(32){
-    animation-delay: 3.3s;
-}
-.dna span:nth-child(33){
-    animation-delay: 3.4s;
-}
-.dna span:nth-child(34){
-    animation-delay: 3.5s;
-}
-
-@keyframes animation {
-    0%{
-        transform: perspective(600px) rotateX(0deg);
-    }
-    100%{
-        transform: perspective(600px) rotateX(360deg);
-    }
-}
 /* dnaanim */
 .activeMember .content .details{
     display: flex;
@@ -1705,6 +2728,9 @@ display: none;
         }
         footer .copyrignt p{
             font-size: 12px;
+        }
+        .helix{
+            top: 55%;
         }
 }
 
